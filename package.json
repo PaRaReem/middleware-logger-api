@@ -1,0 +1,43 @@
+{
+  "name": "logger-middleware-helper",
+  "version": "1.6.2",
+  "description": "libary for insert log to database when service was called",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "dev": "nodemon",
+    "clean": "rm -rf build",
+    "publish": "npm publish",
+    "bump-version": "npm version patch",
+    "release": "npm run clean && npm run build && npm run bump-version && npm run publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codediva253/logger-middleware-helper.git"
+  },
+  "keywords": [
+    "logging"
+  ],
+  "author": "Codediva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codediva253/logger-middleware-helper/issues"
+  },
+  "homepage": "https://github.com/codediva253/logger-middleware-helper#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.4",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "source-map-support": "^0.5.21",
+    "tsyringe": "^4.8.0",
+    "typeorm": "^0.3.17"
+  }
+}
